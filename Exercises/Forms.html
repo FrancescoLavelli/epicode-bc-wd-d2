@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enhanced Form" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>User Registration</h1>
+
+    <section class="form">
+      <form id="registrationForm" novalidate>
+        <div class="form-group">
+          <label for="name" class="required">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+            minlength="2"
+            maxlength="100"
+          />
+          <div>Please enter your full name (at least 2 characters)</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="required">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@domain.com"
+            required
+          />
+          <div>Please enter a valid email address</div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="required">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="(123) 456-7890"
+            pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
+            required
+          />
+          <div>Please enter a valid phone number</div>
+        </div>
+
+        <div class="form-group">
+          <label for="dob" class="required">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required max="" />
+          <div>Please select your date of birth</div>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="120"
+            placeholder="Age is calculated automatically"
+            readonly
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="required">Gender</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="gender" value="male" required />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+            <label
+              ><input type="radio" name="gender" value="other" /> Other</label
+            >
+          </div>
+          <div>Please select your gender</div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">Subscribe to our newsletter</label>
+          </div>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <footer>FL™ 2025</footer>
+  </body>
+</html>
