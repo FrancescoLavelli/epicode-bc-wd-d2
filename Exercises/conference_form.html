@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tech Innovation Conference 2025" />
+    <title>Tech Innovation Conference 2025 - Registration</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tech Innovation Conference 2025</h1>
+      <p>
+        Join us for the premier tech event of the year exploring the latest
+        innovations in Web Development, Cybersecurity, AI, and more.
+      </p>
+    </header>
+
+    <main>
+      <section id="registration">
+        <h2>Registration Form</h2>
+        <form action="submit-registration.php" method="post">
+          <div>
+            <label for="fullname">Full Name: *</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email Address: *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="phone">Phone Number: *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="dob">Date of Birth: *</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <div>
+            <label for="dietary">Dietary Preferences:</label>
+            <select id="dietary" name="dietary">
+              <option value="none">No special requirements</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="gluten-free">Gluten-Free</option>
+              <option value="dairy-free">Dairy-Free</option>
+              <option value="other">Other (please specify)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="dietary-other">If other, please specify:</label>
+            <input
+              type="text"
+              id="dietary-other"
+              name="dietary-other"
+              placeholder="Specify dietary requirements"
+            />
+          </div>
+
+          <div>
+            <p>Registration Type: *</p>
+            <div>
+              <input
+                type="radio"
+                id="standard"
+                name="registration-type"
+                value="standard"
+                required
+              />
+              <label for="standard">Standard ($499)</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="student"
+                name="registration-type"
+                value="student"
+              />
+              <label for="student">Student ($199)</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="vip"
+                name="registration-type"
+                value="vip"
+              />
+              <label for="vip">VIP ($899)</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="session">Preferred Session: *</label>
+            <select id="session" name="session" required>
+              <option value="">Select your preferred session</option>
+              <option value="web-dev">Web Development</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="ai">Artificial Intelligence</option>
+              <option value="cloud">Cloud Computing</option>
+              <option value="blockchain">Blockchain Technology</option>
+              <option value="data-science">Data Science</option>
+            </select>
+          </div>
+
+          <div>
+            <button type="submit">Register Now</button>
+            <button type="reset">Clear Form</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="schedule">
+        <h2>Conference Schedule</h2>
+        <table>
+          <caption>
+            Preliminary Schedule for Tech Innovation Conference 2025
+          </caption>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Session Title</th>
+              <th>Speaker(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 AM - 10:30 AM</td>
+              <td>Opening Keynote: The Future of Technology</td>
+              <td>Dr. Sarah Johnson</td>
+            </tr>
+            <tr>
+              <td>11:00 AM - 12:30 PM</td>
+              <td>Web Development in 2025: Trends and Best Practices</td>
+              <td>Mark Williams, Emily Chen</td>
+            </tr>
+            <tr>
+              <td>1:30 PM - 3:00 PM</td>
+              <td>AI Ethics and Implementation</td>
+              <td>Prof. James Anderson</td>
+            </tr>
+            <tr>
+              <td>3:30 PM - 5:00 PM</td>
+              <td>Cybersecurity Challenges in the Modern Era</td>
+              <td>Lisa Rodriguez, David Kim</td>
+            </tr>
+            <tr>
+              <td>5:30 PM - 7:00 PM</td>
+              <td>Networking Reception</td>
+              <td>All Speakers and Attendees</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Contact Information:
+        <a href="mailto:info@techinnovationconf.com"
+          >info@techinnovationconf.com</a
+        >
+        | Phone: (555) 123-4567
+      </p>
+      <p>
+        Visit our
+        <a href="https://www.techinnovationconf.com">official website</a> for
+        more details.
+      </p>
+      <p>&copy; 2025 Tech Innovation Conference. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
